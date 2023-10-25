@@ -1,7 +1,6 @@
 #include<stdio.h>
-int main()
+int main
 {
-
 	int m = 24;
 	int n = 18;
 	int r = 0;
