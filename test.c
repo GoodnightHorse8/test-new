@@ -1,32 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
+int Min(int x, int y)
+{
+	if (x < y)
+		return x;
+	else
+
+		return y;
+}
+
 int main()
 {
-	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int k = 7;
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int left = 0;
-	int right = sz - 1;
-	while (left <= right)
+	int r = 0;
+	int m = 0;
+	int n = 0;
+	scanf_s("%d %d", &n, &m);
+	r = Min(n, m);
+	while (r)
 	{
-		int mid = (left + right) / 2;
-		if (arr[mid] > k)
 		{
-			right = mid - 1;
+			if (n % r == 0 && m % r == 0)
+				break;
 		}
-		else if (arr[mid] < k)
-		{
-			left = mid + 1;
-		}
-		else (arr[mid] = k)
-			; {
-			printf("找到了,下标是:%d/n", mid);
-			break;
-		}
+		r--;
+
 	}
-		if (left > right)
-		{
-			printf("找不到\n");
-		}
+
+	printf("%d\n", r);
 	return 0;
- 
 }
