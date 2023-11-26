@@ -7,7 +7,7 @@ int main()
 	{
 		if (i % 10 == 9)
 			count++;
-		else if (i / 10 == 10)
+		else if (i / 10 == 9)
 			count++;
 	}
 	printf("count=%d\n", count);
